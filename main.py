@@ -14,9 +14,10 @@ img_data = list(img.getdata())
 #     [(r,g,b), (r,g,b), (r,g,b)],
 # ]
 width, height = img.size
+cpx_factor = 10 # compression factor
 pixels = [
-    img_data[i * width : (i + 1) * width ]
-    for i in range(0, height)
+    img_data[i * width : (i + 1) * width : cpx_factor]
+    for i in range(0, height, cpx_factor)
 ]
 
 # 3. pixel grid -> ascii grid
