@@ -13,3 +13,9 @@ python3 main.py
 Input:
 
 ![input](image.png)
+
+Output:
+
+```
+output.txt
+```
